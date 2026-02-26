@@ -200,3 +200,113 @@ span.highlight {
   color: #555;
   line-height: 1.6;
 }
+/* ===== FAVORITE ARTISTS ===== */
+
+.music-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.artist {
+  text-align: center;
+}
+
+.artist a {
+  text-decoration: none;
+}
+
+.artist img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.artist img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.artist p {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #222;
+}
+
+.artist p:hover {
+  color: #1772d0;
+}
+
+/* ================= Projects Section ================= */
+
+.projects-section {
+  max-width: 1000px;
+  margin: 80px auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.project-row {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 45px;
+  align-items: flex-start;
+}
+
+.project-image img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
+.project-content {
+  flex: 1;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1772d0;
+  margin-bottom: 6px;
+}
+
+.project-meta {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+/* Highlight project chính */
+.highlight {
+  background-color: #f5f5d6;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-row {
+    flex-direction: column;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
